@@ -6,7 +6,7 @@ tencentOCR api for image detection
 =====
 这是腾讯OCR服务端 基于python flask框架 api 实现。 
 
-使用：
+注意：
 =====
 更多信息请查看腾讯官方文档：https://cloud.tencent.com/document/product/866/33526
 
@@ -24,3 +24,9 @@ tencentOCR api for image detection
 
 返回格式：Json 文件   [respond.json](https://github.com/JieruiWangDev/tencentOCR/blob/master/static/respondJson/respond.json)  
 
+启动：
+=====
+运行 app.py   使用postman 工具  <br>
+通过POST请求url: http://127.0.0.1:5000/OCR/images <br>
+在 **Body->form-data** 设置 **KEY=images** (选择**file**格式) **VALUE** 插入检测图片<br>    
+点击 **Send** 获取json文件
