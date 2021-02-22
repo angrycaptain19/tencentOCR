@@ -27,7 +27,7 @@ tencentOCR api for image detection
 启动：
 =====
 运行 app.py<br>
-使用postman 工具  <br>
-通过POST请求url: http://127.0.0.1:5000/OCR/images <br>
-在 **Body->form-data** 设置 **KEY=images** (选择**file**格式) **VALUE** 插入检测图片<br>    
-点击 **Send** 获取json文件
+使用postman 工具:  <br>
+>>>通过POST请求url: http://127.0.0.1:5000/OCR/images <br>
+>>>在 **Body->form-data** 设置 **KEY=images** (选择**file**格式) **VALUE** 插入检测图片    
+>>>点击 **Send** 获取json文件
