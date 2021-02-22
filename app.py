@@ -11,19 +11,21 @@ def hello_world():
 
 @app.route('/OCR/images',methods=["POST"])
 def get_image():
-    if request.method=='POST':
-        file = request.files.get('images')
+    if request.method != 'POST':
+        return
 
-        if file is None:
-            return 'no file'
+    file = request.files.get('images')
 
-        fileName = file.filename
-        image_path = os.path.join('static/upload_images', fileName)
-        file.save(image_path)
+    if file is None:
+        return 'no file'
 
-        msg = generalOCR.postToOCR(image_path)
-        print(msg)
-        return jsonify(msg)
+    fileName = file.filename
+    image_path = os.path.join('static/upload_images', fileName)
+    file.save(image_path)
+
+    msg = generalOCR.postToOCR(image_path)
+    print(msg)
+    return jsonify(msg)
 
 
 
