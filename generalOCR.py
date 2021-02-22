@@ -8,13 +8,15 @@ from tencentcloud.ocr.v20181119 import ocr_client, models
 
 def postToOCR(image_path):
     try:
-        #Using owen SecretID and SecretKey from tencent cloud
-        cred = credential.Credential("", "")
+        # Using own SecretID and SecretKey from tencent cloud
+        cred = credential.Credential("AKIDbw2rSswX0HI3jKydNAi38xXv5yUkHGm2", "Ehx3tXv48vgJhxyibSvKThfOw2vVEiwv")
         httpProfile = HttpProfile()
         httpProfile.endpoint = "ocr.tencentcloudapi.com"
 
         clientProfile = ClientProfile()
         clientProfile.httpProfile = httpProfile
+
+        # Using prefer region
         client = ocr_client.OcrClient(cred, "na-toronto", clientProfile)
 
         req = models.GeneralBasicOCRRequest()
