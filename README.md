@@ -16,7 +16,7 @@ tencentOCR api for image detection
 
 腾讯 python SDK :  https://github.com/TencentCloud/tencentcloud-sdk-python 已在Lib 中
 
-在 generalOCR.py 请使用自己的 SecretID and SecretKey
+在 generalOCR.py 请使用自己的 SecretID and SecretKey  [generalOCR.py](https://github.com/JieruiWangDev/tencentOCR/blob/master/generalOCR.py)
 
 
 **客户端接入文档** 在官方文档同一页面下
