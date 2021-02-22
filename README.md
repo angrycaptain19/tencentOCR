@@ -20,3 +20,7 @@ tencentOCR api for image detection
 
 
 **客户端接入文档** 在官方文档同一页面下
+
+
+返回格式：Json 文件   [respond.json](https://github.com/JieruiWangDev/tencentOCR/blob/master/static/respondJson/respond.json)  
+
