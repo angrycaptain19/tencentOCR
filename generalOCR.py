@@ -8,7 +8,8 @@ from tencentcloud.ocr.v20181119 import ocr_client, models
 
 def postToOCR(image_path):
     try:
-        cred = credential.Credential("AKIDbw2rSswX0HI3jKydNAi38xXv5yUkHGm2", "Ehx3tXv48vgJhxyibSvKThfOw2vVEiwv")
+        #Using owen SecretID and SecretKey from tencent cloud
+        cred = credential.Credential("", "")
         httpProfile = HttpProfile()
         httpProfile.endpoint = "ocr.tencentcloudapi.com"
 
